@@ -1,0 +1,53 @@
+Decoding Nr 1
+  File Start: /Users/carlos/Documents/GitHub/Canonical_Template_Tracking/SimulatedData/sub1/GLM_...
+
+  File Train 1: ...Task/beta_0001.nii 
+  File Train 1: ...Task/beta_00010.nii
+  File Train 1: ...Task/beta_00011.nii
+  File Train 1: ...Task/beta_00012.nii
+  File Train 1: ...Task/beta_00013.nii
+  File Train 1: ...Task/beta_00014.nii
+  File Train 1: ...Task/beta_00015.nii
+  File Train 1: ...Task/beta_00016.nii
+  File Train 1: ...Task/beta_00017.nii
+  File Train 1: ...Task/beta_00018.nii
+  File Train 2: ...Task/beta_00019.nii
+  File Train 2: ...Task/beta_0002.nii 
+  File Train 2: ...Task/beta_00020.nii
+  File Train 2: ...Task/beta_00021.nii
+  File Train 2: ...Task/beta_00022.nii
+  File Train 2: ...Task/beta_00023.nii
+  File Train 2: ...Task/beta_00024.nii
+  File Train 2: ...Task/beta_00025.nii
+  File Train 2: ...Task/beta_00026.nii
+  File Train 2: ...Task/beta_00027.nii
+  File Train 3: ...Task/beta_00028.nii
+  File Train 3: ...Task/beta_00029.nii
+  File Train 3: ...Task/beta_0003.nii 
+  File Train 3: ...Task/beta_00030.nii
+  File Train 3: ...Task/beta_00031.nii
+  File Train 3: ...Task/beta_00032.nii
+  File Train 3: ...Task/beta_00033.nii
+  File Train 3: ...Task/beta_00034.nii
+  File Train 3: ...Task/beta_00035.nii
+  File Train 3: ...Task/beta_00036.nii
+  File Train 4: ...Task/beta_00037.nii
+  File Train 4: ...Task/beta_00038.nii
+  File Train 4: ...Task/beta_00039.nii
+  File Train 4: ...Task/beta_0004.nii 
+  File Train 4: ...Task/beta_00040.nii
+  File Train 4: ...Task/beta_0005.nii 
+  File Train 4: ...Task/beta_0006.nii 
+  File Train 4: ...Task/beta_0007.nii 
+  File Train 4: ...Task/beta_0008.nii 
+  File Train 4: ...Task/beta_0009.nii 
+
+  File Test 1: ...Loc1/beta_0001.nii 
+  File Test 2: ...Loc1/beta_0002.nii 
+  File Test 3: ...Loc1/beta_0003.nii 
+  File Test 4: ...Loc1/beta_0004.nii 
+  File Test 1: ...Loc2/beta_0001.nii 
+  File Test 2: ...Loc2/beta_0002.nii 
+  File Test 3: ...Loc2/beta_0003.nii 
+  File Test 4: ...Loc2/beta_0004.nii 
+

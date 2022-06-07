@@ -27,14 +27,14 @@ cfg.analysis = 'roi';
 % cfg.searchlight.spherical = 1;
 
 %% Set the filename of your brain mask (searchlight analysis) or ROI mask:
-cfg.files.mask = '/Data/CTT/code/SimulatedData/sub1/anat/mask.nii';
+cfg.files.mask = 'SimulatedData/sub1/anat/mask.nii';
 %% Set the output directory where data will be saved
-cfg.results.dir = '/Data/CTT/code/SimulatedData/sub1/results_CTT/';
+cfg.results.dir = 'SimulatedData/sub1/results_CTT/';
 
 %% 1. Main paradigm data:
 
 %  1.1. Set the filepath where your SPM.mat and all related betas are:
-beta_dir_task = '/Data/CTT/code/SimulatedData/sub1/GLM_Task/';
+beta_dir_task = 'SimulatedData/sub1/GLM_Task/';
 
 
 % %  1.2. Set the conditions names to extract the activity patterns. E.g.:
@@ -64,7 +64,7 @@ clear regressor_names
 %%  LOCALIZER 1:
 
 %  2.1. Set the file path where your SPM.mat and all related betas are:
-beta_dir_loc1 =  '/Data/CTT/code/SimulatedData/sub1/GLM_Loc1/';
+beta_dir_loc1 =  'SimulatedData/sub1/GLM_Loc1/';
 
 %  2.2. Set the conditions names to extract the CANONICAL TEMPLATES:
 labelname_loc1{1} = '*cat*';
@@ -94,7 +94,7 @@ clear regressor_names
 %% LOCALIZER 2 (if it applies)
 
 %  2.1. Set the file path where your SPM.mat and all related betas are:
-beta_dir_loc2 =  '/Data/CTT/code/SimulatedData/sub1/GLM_Loc2/';
+beta_dir_loc2 =  'SimulatedData/sub1/GLM_Loc2/';
 
 %  2.2. Set the conditions names to extract the CANONICAL TEMPLATES:
 labelname_loc2{1} = '*cat*';
@@ -163,8 +163,8 @@ cfg.design.unbalanced_data = 'ok';
 results = decoding(cfg);
 
 disp('Localizer 1 - Correlation-based distance')
-disp(['Relevant category activatation value: ' num2str(results.CTT_corr_relevant.output{1})]);
-disp(['Irrelevant category activatation value: ' num2str(results.CTT_corr_irrelevant.output{1})]);
+disp(['Correlation between Main Task and Relevant Category template: ' num2str(results.CTT_corr_relevant.output{1})]);
+disp(['Correlation between Main Task and Irrelevant Category template: ' num2str(results.CTT_corr_irrelevant.output{1})]);
 disp('Localizers 1 and 2 - Multiple regresssion')
 disp(['Beta value for localizer 1 templates: ' num2str(results.CTT_MultReg_Loc1.output{1})]);
 disp(['Beta value for localizer 2 templates: ' num2str(results.CTT_MultReg_Loc2.output{1})]);
