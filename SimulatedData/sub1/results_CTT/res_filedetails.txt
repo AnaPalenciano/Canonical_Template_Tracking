@@ -1,0 +1,53 @@
+Decoding Nr 1
+  File Start: /Users/anapaquipalenciano/Documents/UGENT/CTT/code/SimulatedData/sub1/GLM_...
+
+  File Train 1: ...Task/beta_0001.nii
+  File Train 1: ...Task/beta_0002.nii
+  File Train 1: ...Task/beta_0003.nii
+  File Train 1: ...Task/beta_0004.nii
+  File Train 1: ...Task/beta_0005.nii
+  File Train 1: ...Task/beta_0006.nii
+  File Train 1: ...Task/beta_0007.nii
+  File Train 1: ...Task/beta_0008.nii
+  File Train 1: ...Task/beta_0009.nii
+  File Train 1: ...Task/beta_0010.nii
+  File Train 1: ...Task/beta_0011.nii
+  File Train 1: ...Task/beta_0012.nii
+  File Train 1: ...Task/beta_0013.nii
+  File Train 1: ...Task/beta_0014.nii
+  File Train 1: ...Task/beta_0015.nii
+  File Train 1: ...Task/beta_0016.nii
+  File Train 1: ...Task/beta_0017.nii
+  File Train 1: ...Task/beta_0018.nii
+  File Train 1: ...Task/beta_0019.nii
+  File Train 1: ...Task/beta_0020.nii
+  File Train 2: ...Task/beta_0021.nii
+  File Train 2: ...Task/beta_0022.nii
+  File Train 2: ...Task/beta_0023.nii
+  File Train 2: ...Task/beta_0024.nii
+  File Train 2: ...Task/beta_0025.nii
+  File Train 2: ...Task/beta_0026.nii
+  File Train 2: ...Task/beta_0027.nii
+  File Train 2: ...Task/beta_0028.nii
+  File Train 2: ...Task/beta_0029.nii
+  File Train 2: ...Task/beta_0030.nii
+  File Train 2: ...Task/beta_0031.nii
+  File Train 2: ...Task/beta_0032.nii
+  File Train 2: ...Task/beta_0033.nii
+  File Train 2: ...Task/beta_0034.nii
+  File Train 2: ...Task/beta_0035.nii
+  File Train 2: ...Task/beta_0036.nii
+  File Train 2: ...Task/beta_0037.nii
+  File Train 2: ...Task/beta_0038.nii
+  File Train 2: ...Task/beta_0039.nii
+  File Train 2: ...Task/beta_0040.nii
+
+  File Test 1: ...Loc1/beta_0001.nii
+  File Test 1: ...Loc1/beta_0002.nii
+  File Test 2: ...Loc1/beta_0003.nii
+  File Test 2: ...Loc1/beta_0004.nii
+  File Test 1: ...Loc2/beta_0001.nii
+  File Test 1: ...Loc2/beta_0002.nii
+  File Test 2: ...Loc2/beta_0003.nii
+  File Test 2: ...Loc2/beta_0004.nii
+
