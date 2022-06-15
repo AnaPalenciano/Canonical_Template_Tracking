@@ -3,9 +3,9 @@
 % This function fits a multiple regression, predicting the main task 
 % activity patterns with a series of canonical templates
 %
-% Instead of using the decoding_out.opt (task - localizer(s) correlation 
-% matrix), this function directly uses the data variable, containing
-% the activity patterns, i.e., before the correlation. 
+% Instead of using decoding_out.opt (task - localizer(s) correlation 
+% matrix), this function directly uses the variable data, containing
+% the activity patterns (i.e., before the correlation) 
 %
 % To use it: 
 % cfg.results.output = {'transres_CTT_MultReg_Loc1','transres_CTT_MultReg_Loc2'}
