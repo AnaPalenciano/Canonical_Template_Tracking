@@ -5,8 +5,8 @@
 % patterns paradidgm data (decoding_out.opt).
 % 
 % The correlation matrix (N betas from the main task * M templates from the
-% localizer) is already generated. Here we just average the pertinent
-% cells. 
+% localizer) is already generated in the main decoding.m script. 
+% Here we just average the pertinent cells. 
 % 
 % To use it: 
 % cfg.results.output = {'transres_CTT_corr_relevant', 'transres_CTT_corr_irrelevant'}
@@ -16,20 +16,26 @@
 
 function output = transres_CTT_corr_irrelevant(decoding_out,~,cfg,data)
 
-% Extract conditions from main paradigm
+%% Extract conditions' labels from the main paradigm 
 labels_task = cfg.design.label(cfg.files.source>0);
-% Extract conditions from localizer task  
-labels_loc  = cfg.design.label(cfg.files.source==-1);
+%% Extract conditions' labels from the localizer task  
+%  Here we just use one localizer, labelled as -1 in cfg.files.source
+%  By modifying this index, different localizers will be accessed. 
+labels_loc  = cfg.design.label(cfg.files.source==-1); 
 
-% Find correspondece among tasks
+%% Find correspondece among task and localizer.
+%  Here we will compare the correlation of task-relevant and
+%  task-irrelevant templates. The rel variable codes the cells 
+%  from the correlation matrix (decoding.opt) with matching labels
+%  across task and localizer. 
 rel = zeros(length(labels_task),length(labels_loc));
 for i = 1:length(labels_loc)
     rel(:,i) = labels_task==labels_loc(i);
 end
 
-% In case they are used for the baseline, extract correlation values from
-% cells with non-matching conditions
+%% Extract correlation values from cells with non-matching conditions 
+%  i.e.: extract correlation with task-irrelevant templates, used as baseline.
 corr_irr = decoding_out.opt(rel==0);
 
-% return the optional output only
+% return output 
 output = {mean(corr_irr)};
