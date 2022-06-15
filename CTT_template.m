@@ -150,13 +150,13 @@ cfg.design.test(cfg.files.source>0) = 0;
 cfg.decoding.software = 'similarity';
 cfg.decoding.method = 'classification';
 
-% The similarity metric can be modify here. For further details, please
-% check: pattern_similarity.m
-cfg.decoding.train.classification.model_parameters = 'pearson';
+% The similarity metric can be modify here. For further details, please check: pattern_similarity.m
+% Here we use the Fisher-z-transformed correlation similarity:
+cfg.decoding.train.classification.model_parameters = 'zcorr'; 
 
 %% CTT implementation:
-% Option 1: pearson correlation.
-% Option 2: multiple regresssion (to compare several canonical templates)
+% Option 1: pearson correlation (to compare templates from two conditions: task-relevant vs. task-irrelevant)
+% Option 2: multiple regresssion (to compare templates from two localizers)
 cfg.results.output = {'CTT_corr_relevant', 'CTT_corr_irrelevant', ...
     'CTT_MultReg_Loc1', 'CTT_MultReg_Loc2'};
 cfg.design.unbalanced_data = 'ok';
